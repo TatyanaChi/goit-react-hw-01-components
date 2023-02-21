@@ -4,7 +4,7 @@ import {Container, Title, List, Item, Label, Percentage} from './Statistics.styl
 export const Statistics = ({title, stats}) =>{
    return (
     <Container>
-  <Title>{title}</Title>
+  {title && <Title>{title}</Title>}
 
   <List>
     {stats.map(stat => (
